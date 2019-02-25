@@ -36,6 +36,7 @@ namespace AlgosPractice.Helper
                 }
             }
 
+            // if not found
             return -1;
         }
 
@@ -73,6 +74,7 @@ namespace AlgosPractice.Helper
                 }
             }
 
+            // if not found
             return -1;
         }
     }
