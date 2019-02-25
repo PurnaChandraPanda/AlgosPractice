@@ -8,7 +8,7 @@ namespace AlgosPractice.Helper
 {
     static class Search
     {
-        //****** recusion does not yield correct results *********
+        //****** recursion does not yield correct results *********
         //public static int GetMissingNumberInSequenceWithRecusion(int[] array, int l, int r)
         //{
         //    if(l <= r)
