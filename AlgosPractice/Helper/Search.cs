@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AlgosPractice.Helper
 {
-    static class Search
+    class Search
     {
         /// <summary>
         /// Get the missing number in ordered sequence
