@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -76,6 +78,48 @@ namespace AlgosPractice.Helper
             }
 
             return array;
+        }
+
+        public static int[] QuickSort(int[] array, int left, int right)
+        {
+            int pivot = 0;
+
+            if (left < right)
+            {
+                pivot = partition(array, left, right);
+                Console.WriteLine($"pivot - {pivot}");
+                QuickSort(array, left, pivot - 1);
+                QuickSort(array, pivot + 1, right);
+            }
+
+            return array;
+        }
+
+        private static int partition(int[] array, int left, int right)
+        {
+            int p = array[right];
+            int i = left - 1;
+
+            for (int j = left; j <= right - 1; j++)
+            {
+                if (array[j] <= p)
+                {
+                    i++;
+
+                    // swap i and j elements
+                    int temp1 = array[i];
+                    array[i] = array[j];
+                    array[j] = temp1;
+                }
+            }
+
+            // swap i+1 and right elements
+            int temp2 = array[i + 1];
+            array[i + 1] = array[right];
+            array[right] = temp2;
+
+            // return pivot element index
+            return (i + 1);
         }
     }
 }

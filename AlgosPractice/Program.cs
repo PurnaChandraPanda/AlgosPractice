@@ -18,6 +18,8 @@ namespace AlgosPractice
             Console.WriteLine("\t3a. BubbleSort");
             Console.WriteLine("\t3b. SelectionSort");
             Console.WriteLine("\t3c. InsertionSort");
+            Console.WriteLine("\t3d. QuickSort");
+
             var option = Console.ReadLine();
             
             int result = 0;
@@ -63,7 +65,7 @@ namespace AlgosPractice
                 watch.Stop();
 
                 Array.ForEach(
-                    outputArray, 
+                    outputArray,
                     element => Console.Write($"{element} ")
                     );
 
@@ -99,7 +101,17 @@ namespace AlgosPractice
 
                 Console.WriteLine($"*****took {watch.ElapsedTicks} ticks*****");
             }
+            else if (option.Equals("3d"))
+            {
+                var inputArray = new int[] { 10, 80, 30, 90, 40, 50, 70 };
+                var outputArray = Helper.Sort.QuickSort(inputArray, 0, inputArray.Length - 1);
 
+                Array.ForEach(
+                    outputArray,
+                    element => Console.Write($"{element} ")
+                    );
+            }
+            
             Console.ReadLine();
         }
     }
