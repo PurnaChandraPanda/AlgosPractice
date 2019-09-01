@@ -12,13 +12,13 @@ namespace MatrixOps
         static int[,] dp = new int[m, n];
 
         static void Main(string[] args)
-        {  
+        {
             // initialize 2d matrix
             for (int i = 0; i < m; i++)
             {
                 for (int j = 0; j < n; j++)
                 {
-                    a[i, j] += i*n + j + 1;
+                    a[i, j] += i * n + j + 1;
                 }
             }
 
