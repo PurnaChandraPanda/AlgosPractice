@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NonLinearTraversalSample", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MatrixOps", "MatrixOps\MatrixOps.csproj", "{83708558-CE07-437C-8085-120437ED3CBA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fibonacci", "Fibonacci\Fibonacci.csproj", "{001F8215-F214-479C-ADE8-6B0C7FA1E349}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fibonacci", "Fibonacci\Fibonacci.csproj", "{001F8215-F214-479C-ADE8-6B0C7FA1E349}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PyramidDisplay", "PyramidDisplay\PyramidDisplay.csproj", "{911EA822-5E80-4C4F-B626-F069C9C09F39}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{001F8215-F214-479C-ADE8-6B0C7FA1E349}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{001F8215-F214-479C-ADE8-6B0C7FA1E349}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{001F8215-F214-479C-ADE8-6B0C7FA1E349}.Release|Any CPU.Build.0 = Release|Any CPU
+		{911EA822-5E80-4C4F-B626-F069C9C09F39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{911EA822-5E80-4C4F-B626-F069C9C09F39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{911EA822-5E80-4C4F-B626-F069C9C09F39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{911EA822-5E80-4C4F-B626-F069C9C09F39}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
