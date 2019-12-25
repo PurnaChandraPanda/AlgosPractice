@@ -10,8 +10,8 @@ namespace PyramidDisplay
             int numberPicked = Int32.Parse(Console.ReadLine());
 
             Console.WriteLine("which operation to follow?? ");
-            Console.WriteLine("\t1. print rightangle triage");
-            Console.WriteLine("\t2. print symmetric triage");
+            Console.WriteLine("\t1. print rightangle triangle");
+            Console.WriteLine("\t2. print symmetric triangle");
             Console.WriteLine("\t3. print pyramid");
             
             var option = Int32.Parse(Console.ReadLine());
